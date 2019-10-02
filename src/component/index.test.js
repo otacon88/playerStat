@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, render } from 'enzyme';
+import { mount } from 'enzyme';
 import  { AppBar, Toolbar, Card } from '@material-ui/core/';
 import { get } from 'lodash';
 import playersFromJson from '../data/data.json';
