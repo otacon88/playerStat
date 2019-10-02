@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import Main from './container/';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import { mount } from 'enzyme';
+
+it('Should content Main component', () => {
+  const wrapper = mount(<App />);
+  const welcome = (<Main />);
+  expect(wrapper.contains(welcome)).toEqual(true);
 });
